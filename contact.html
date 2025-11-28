@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Event Management Website</title>
+</head>
+<header class="head">
+    <a href="a" class="logo">EpicEra Events</a>
+    <div id="menu"><i class="fa-solid fa-list"></i></div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">about</a>
+        <a href="Services.html">services</a>
+        <a href="price.html">price</a>
+        <a href="Events.html">Events</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+</header>
+
+<!--------------contact section-------------------->
+<footer class="contact" id="contact">
+    <div class="contact-sec">
+        <div class="contact-inner">
+            <div class="contact-inner-col">
+                <h1><i class="fa-solid fa-magnifying-glass-location"></i>Find US</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.5991102006024!2d77.1021258439364!3d28.487346469891765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1ed23c87bb8f%3A0x2d8533050327cabc!2sLAN%20Events%20%26%20Consultants!5e0!3m2!1sen!2sin!4v1763885815213!5m2!1sen!2sin"
+                    width="90%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-inner-col">
+                <h1>Contact US</h1>
+                <p></p>
+                <p>We want to hear from you,Write US:</p>
+                <form action="#" id="formdetails">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <input type="text" id="email" placeholder="Enter your Email" required>
+                    <input type="text" id="mobile" placeholder="Enter your Mobile No." required>
+                    <textarea name="msg" id="" rows="8" cols="10" placeholder="Give Your Msg"></textarea>
+                    <a href="#" class="btn">submit</a>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <!------------------footer-------------------------------------->
+    <div class="cont-container">
+        <div class="f-container">
+            <h2>Event.com</h2>
+            <p></p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="f-container">
+            <i class="fa-solid fa-circle-arrow-right">Anand</i>
+            <i class="fa-solid fa-circle-arrow-right">Mumbai</i>
+            <i class="fa-solid fa-circle-arrow-right">Vadodara</i>
+            <i class="fa-solid fa-circle-arrow-right">Ahmedabad</i>
+            <i class="fa-solid fa-circle-arrow-right">Surat</i>
+        </div>
+        <div class="f-container">
+            <h2>Our Newsletter</h2>
+            <p>Subscribe for latest updates</p>
+            <input type="text" name="Email" placeholder="Enter Your Mail">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;2024 All Rights Reserved | Knowledge Place KP </p>
+        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+</footer>
+<script>
+    let navbar = document.querySelector('.head .navbar');
+    let menu = document.querySelector('#menu');
+
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    };
+</script>
+</body>

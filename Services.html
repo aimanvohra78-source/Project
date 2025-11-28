@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Event Management Website</title>
+</head>
+
+<body>
+    <header class="head">
+        <a href="a" class="logo">EpicEra Events</a>
+        <div id="menu"><i class="fa-solid fa-list"></i></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="Services.html">services</a>
+            <a href="price.html">price</a>
+            <a href="Events.html">Events</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <section id="Services" class="swiper mySwiper service-slider">
+        <h1 class="heading"><span>S</span>ervice<span>s</span></h1>
+        <h3 class="info" style="color:#795548">We Organize you Celebrate</h3>
+        <p class="info">"Some people look for a beautiful place.Others make a place beautiful.</p>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Corporate Event<img
+                    src="https://www.100percentevent.com/files/uploads/images/Corporate%20Events.jpg" alt=""></div>
+            <div class="swiper-slide">Birthday Party<img src="https://cdn.balloondekor.com/14/1742635965961.webp"
+                    alt="">
+            </div>
+            <div class="swiper-slide">Marriage Reception<img
+                    src="https://i.pinimg.com/474x/3f/4c/e4/3f4ce4265b717aacce9b6b8378018292.jpg" alt=""></div>
+            <div class="swiper-slide">fashion Event<img
+                    src="https://thumbs.dreamstime.com/z/blue-runway-golden-decor-event-stage-fashion-show-spotlight-lighting-dramatic-accents-bathed-spotlights-perfect-379520974.jpg"
+                    alt=""></div>
+            <div class="swiper-slide">Birthday Decor<img
+                    src="https://borntoparty.in/img/what-we-do/birthday-event-planner.jpg" alt=""></div>
+            <div class="swiper-slide">Personal Party<img
+                    src="https://partyslate.imgix.net/companies-cover-image/8345/image-705a33e6-4fcc-40b0-88a5-5de41a5a5cb5.jpg?ixlib=js-3.8.0&auto=compress%2Cformat&bg=fff&w=1920"
+                    alt=""></div>
+            <div class="swiper-slide">D.J. Night<img
+                    src="https://www.feelgoodevents.com.au/wp-content/uploads/2013/09/Silver-Disco-Theme-25-scaled.jpg"
+                    alt=""></div>
+        </div>
+    </section>
+    <!------------------footer-------------------------------------->
+    <div class="cont-container">
+        <div class="f-container">
+            <h2>Event.com</h2>
+            <p></p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="f-container">
+            <i class="fa-solid fa-circle-arrow-right">Anand</i>
+            <i class="fa-solid fa-circle-arrow-right">Mumbai</i>
+            <i class="fa-solid fa-circle-arrow-right">Vadodara</i>
+            <i class="fa-solid fa-circle-arrow-right">Ahmedabad</i>
+            <i class="fa-solid fa-circle-arrow-right">Surat</i>
+        </div>
+        <div class="f-container">
+            <h2>Our Newsletter</h2>
+            <p>Subscribe for latest updates</p>
+            <input type="text" name="Email" placeholder="Enter Your Mail">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;2024 All Rights Reserved | Knowledge Place KP </p>
+        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+    </footer>
+</body>
+<script>
+    /*-------------swiper-----------------*/
+    var swiper = new Swiper('.service-slider', {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 3,
+            slideshadows: true,
+        },
+        loop: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        }
+    });
+</script>
+</body>
+<script>
+    let navbar = document.querySelector('.head .navbar');
+    let menu = document.querySelector('#menu');
+
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    };
+</script>
+
+
+</html>

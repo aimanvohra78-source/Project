@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Event Management Website</title>
+</head>
+
+<body>
+    <header class="head">
+        <a href="a" class="logo">EpicEra Events</a>
+        <div id="menu"><i class="fa-solid fa-list"></i></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="Services.html">services</a>
+            <a href="price.html">price</a>
+            <a href="Events.html">Events</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <!------------About Section------------------>
+    <section class="about" id="about">
+        <h1 class="heading">About <span>US</span></h1>
+        <img src="https://media.istockphoto.com/id/1380516073/photo/female-party-planner-arranging-decorations-for-a-child-birthday-party.jpg?s=612x612&w=0&k=20&c=7LWTCxgrl-8VmX8J0YToQU69_HJeBhj47ufevbxQtFU="
+            alt="" class="bor">
+        <div class="container">
+            <div class="im">
+                <img src="https://images.pexels.com/photos/169193/pexels-photo-169193.jpeg?cs=srgb&dl=pexels-asadphoto-169193.jpg&fm=jpg"
+                    alt="">
+            </div>
+            <div class="content">
+                <h3>Know US</h3>
+                <p>We are dedicated event management team focused on creating memorable and well-oraganized events.
+                    From planning to execution,we deliver seamless experiences with creativity,reliability,
+                    and attention to detail.Our goal is to bring your ideas to life and make every event truely special.
+                </p>
+                <a href="#" class="btn">Explore</a>
+            </div>
+        </div>
+
+    </section>
+    <!------------------footer-------------------------------------->
+    <div class="cont-container">
+        <div class="f-container">
+            <h2>Event.com</h2>
+            <p></p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="f-container">
+            <i class="fa-solid fa-circle-arrow-right">Anand</i>
+            <i class="fa-solid fa-circle-arrow-right">Mumbai</i>
+            <i class="fa-solid fa-circle-arrow-right">Vadodara</i>
+            <i class="fa-solid fa-circle-arrow-right">Ahmedabad</i>
+            <i class="fa-solid fa-circle-arrow-right">Surat</i>
+        </div>
+        <div class="f-container">
+            <h2>Our Newsletter</h2>
+            <p>Subscribe for latest updates</p>
+            <input type="text" name="Email" placeholder="Enter Your Mail">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;2024 All Rights Reserved | Knowledge Place KP </p>
+        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+    </footer>
+
+    <script>
+        let navbar = document.querySelector('.head .navbar');
+        let menu = document.querySelector('#menu');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+        };
+    </script>
+
+</body>

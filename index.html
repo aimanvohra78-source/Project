@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Event Management Website</title>
+</head>
+
+<body>
+    <header class="head">
+        <a href="a" class="logo">EpicEra Events</a>
+        <div id="menu"><i class="fa-solid fa-list"></i></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="Services.html">services</a>
+            <a href="price.html">price</a>
+            <a href="Events.html">Events</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <!----------Home Section------------------>
+    <section class="Home" id="Home">
+        <div class="content">
+            <p>Let's Plan Event</p>
+            <h3>let's Organize Events with US&nbsp;<i class="fa-solid fa-heart"></i></h3>
+            <a href="#" class="btn">Contact us</a>
+        </div>
+    </section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let navbar = document.querySelector('.head .navbar');
+    let menu = document.querySelector('#menu');
+
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    };
+
+
+
+
+
+    document.querySelector(".btn").addEventListener("click", function (e) {
+        this.style.transform = "scale(0.9)";
+        setTimeout(() => {
+            this.style.transform = "scale(1)";
+        }, 150);
+    });
+
+
+
+</script>
+
+</html>

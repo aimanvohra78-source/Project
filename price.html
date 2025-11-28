@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Event Management Website</title>
+</head>
+
+<body>
+    <header class="head">
+        <a href="a" class="logo">EpicEra Events</a>
+        <div id="menu"><i class="fa-solid fa-list"></i></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="Services.html">services</a>
+            <a href="price.html">price</a>
+            <a href="Events.html">Events</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <section class="price" id="price">
+        <h1 class="heading"><span>Choose</span>&nbsp;Plan</h1>
+        <div class="price-container">
+            <div class="price-box">
+                <h3 class="package">Basic Package</h3>
+                <h3 class="amount">$3500</h3>
+                <p><i class="fa-solid fa-square-check"></i>Basic Decoration(balloons,banners,<br>backdrop)</p>
+                <p><i class="fa-solid fa-square-check"></i>Simple stage setup</p>
+                <p><i class="fa-solid fa-square-check"></i>Music system(basic)</p>
+                <p><i class="fa-solid fa-square-check"></i>1 event coordinator</p>
+                <p><i class="fa-solid fa-square-check"></i>Photography(50 edited pictures)</p>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+            <div class="price-box">
+                <h3 class="package">Standard Package </h3>
+                <h3 class="amount">$4500</h3>
+                <p><i class="fa-solid fa-square-check"></i>Theme-based decoration</p>
+                <p><i class="fa-solid fa-square-check"></i>Stage with lighting</p>
+                <p><i class="fa-solid fa-square-check"></i>Professional sound system</p>
+                <p><i class="fa-solid fa-square-check"></i>Emcee/Host(optional add-on)</p>
+                <p><i class="fa-solid fa-square-check"></i>Photography+Short video</p>
+                <p><i class="fa-solid fa-square-check"></i>2 coordinators for event flow</p>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+            <div class="price-box">
+                <h3 class="package">Premium Package </h3>
+                <h3 class="amount">$6500</h3>
+                <p><i class="fa-solid fa-square-check"></i>Premium Theme decor(flowers,entrance arch,<br>LED backdrop)
+                </p>
+                <p><i class="fa-solid fa-square-check"></i>HD sound+DJ</p>
+                <p><i class="fa-solid fa-square-check"></i>Stage+ambient lighting</p>
+                <p><i class="fa-solid fa-square-check"></i>Professional photography<br> &videography</p>
+                <p><i class="fa-solid fa-square-check"></i>Guest management team</p>
+                <p><i class="fa-solid fa-square-check"></i>Complete event planning &scheduling</p>
+                <p><i class="fa-solid fa-square-check"></i>catering coordination</p>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+            <div class="price-box">
+                <h3 class="package"> Luxury Grand Package</h3>
+                <h3 class="amount">$8500</h3>
+                <p><i class="fa-solid fa-square-check"></i>Full luxury customized decoration</p>
+                <p><i class="fa-solid fa-square-check"></i>LED wall,moving lights,truss setup</p>
+                <p><i class="fa-solid fa-square-check"></i>Professional DJ+live music</p>
+                <p><i class="fa-solid fa-square-check"></i>Cinematic photography&4K videography</p>
+                <p><i class="fa-solid fa-square-check"></i>Event host(MC)</p>
+                <p><i class="fa-solid fa-square-check"></i>Full event management team</p>
+                <p><i class="fa-solid fa-square-check"></i>Celebrity entry setup(optional)</p>
+                <p><i class="fa-solid fa-square-check"></i>Catering,vendor& logistic handling</p>
+                <a href="#" class="btn">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+    <!------------------footer-------------------------------------->
+    <div class="cont-container">
+        <div class="f-container">
+            <h2>Event.com</h2>
+            <p></p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="f-container">
+            <i class="fa-solid fa-circle-arrow-right">Anand</i>
+            <i class="fa-solid fa-circle-arrow-right">Mumbai</i>
+            <i class="fa-solid fa-circle-arrow-right">Vadodara</i>
+            <i class="fa-solid fa-circle-arrow-right">Ahmedabad</i>
+            <i class="fa-solid fa-circle-arrow-right">Surat</i>
+        </div>
+        <div class="f-container">
+            <h2>Our Newsletter</h2>
+            <p>Subscribe for latest updates</p>
+            <input type="text" name="Email" placeholder="Enter Your Mail">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;2024 All Rights Reserved | Knowledge Place KP </p>
+        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+    </footer>
+</body>
+<script>
+    let navbar = document.querySelector('.head .navbar');
+    let menu = document.querySelector('#menu');
+
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    };
+</script>
+
+</html>
