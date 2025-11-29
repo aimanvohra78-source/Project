@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <title>Event Management Website</title>
+</head>
+<header class="head">
+    <a href="a" class="logo">EpicEra Events</a>
+    <div id="menu"><i class="fa-solid fa-list"></i></div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">about</a>
+        <a href="Services.html">services</a>
+        <a href="price.html">price</a>
+        <a href="Events.html">Events</a>
+        <a href="review.html">review</a>
+        <a href="budget.html">Budget Calculator</a>
+        <a href="contact.html">contact</a>
+
+    </nav>
+</header>
+
+<body>
+    <section class="budget-section">
+        <h2>Event Budget Calculator</h2>
+        <p class="sub-text">Estimate your event cost in seconds</p>
+
+        <div class="budget-box">
+            <label>Number of Guests</label>
+            <input type="number" id="guests" placeholder="Enter number of guests">
+
+            <label>Select Event Type</label>
+            <select id="eventType">
+                <option value="500">Birthday (₹500 per person)</option>
+                <option value="1000">Wedding (₹1000 per person)</option>
+                <option value="800">Corporate Event (₹800 per person)</option>
+                <option value="600">Party (₹600 per person)</option>
+            </select>
+
+            <label>Decoration Style</label>
+            <select id="decoration">
+                <option value="5000">Basic (₹5,000)</option>
+                <option value="5000">Standard (₹20,000)</option>
+
+                <option value="10000">Premium (₹40,000)</option>
+                <option value="20000">Luxury (₹80,000)</option>
+            </select>
+
+            <button onclick="calculateBudget()">Calculate Budget</button>
+
+            <div id="result"></div>
+        </div>
+    </section>
+
+
+    <script>
+        function calculateBudget() {
+            let guests = document.getElementById("guests").value;
+            let eventCost = document.getElementById("eventType").value;
+            let decoration = document.getElementById("decoration").value;
+
+            if (guests === "" || guests <= 0) {
+                alert("Please enter a valid number of guests");
+                return;
+            }
+
+            let total = (guests * eventCost) + parseInt(decoration);
+
+            document.getElementById("result").style.display = "block";
+            document.getElementById("result").innerHTML =
+                "Estimated Budget: <b>₹" + total.toLocaleString() + "</b>";
+        }
+        let navbar = document.querySelector('.head .navbar');
+        let menu = document.querySelector('#menu');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+        };
+
+
+
+    </script>
+</body>
+
+</html>
